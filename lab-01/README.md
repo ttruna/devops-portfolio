@@ -8,9 +8,9 @@
 
 **Вивід `git config --list --global`:**
 > ```text
-core.editor=code --wait
-user.name=admin
-user.email=ta.daskaliuk@gmail.com
+> core.editor=code --wait
+> user.name=admin
+> user.email=ta.daskaliuk@gmail.com
 > ```
 
 ## Завдання 2. Середовища виконання
@@ -29,7 +29,7 @@ user.email=ta.daskaliuk@gmail.com
 
 **Вивід версій інструментів:**
 > ```text
-> [ВСТАВТЕ ВИВІД node -v, python -v (або uv --version), docker compose version]
+> node -v  v24.10.0, uv --version. uv 0.12.21 (7af826859 2026-09-29 aarch64-apple-darwin),docker compose version  Docker Compose version v5.1.4]
 > ```
 
 ## Завдання 3. GitHub і доступ
@@ -46,7 +46,7 @@ user.email=ta.daskaliuk@gmail.com
 
 **Перевірка з'єднання:**
 > ```text
-> [ВСТАВТЕ ВИВІД ssh -T git@github.com]
+> ssh -T git@github.com Hi ttruna! You've successfully authenticated, but GitHub does not provide shell access.
 > ```
 
 ## Завдання 4. Портфоліо-репозиторій
