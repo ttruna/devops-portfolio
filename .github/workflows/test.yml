@@ -1,0 +1,11 @@
+name: Test Workflow
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run tests
+       run: echo "Це викличе помилку через неправильний відступ"
