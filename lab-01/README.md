@@ -8,7 +8,9 @@
 
 **Вивід `git config --list --global`:**
 > ```text
-> [ВСТАВТЕ ВАШ ВИВІД ТУТ]
+core.editor=code --wait
+user.name=admin
+user.email=ta.daskaliuk@gmail.com
 > ```
 
 ## Завдання 2. Середовища виконання
