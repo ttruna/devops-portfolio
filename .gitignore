@@ -1,3 +1,71 @@
-# macOS
+# === OS generated files ===
 .DS_Store
-**/.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# === Editors & IDEs ===
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+*.code-workspace
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# === Node.js & Web ===
+node_modules/
+jspm_packages/
+bower_components/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+.pnpm-store/
+package-lock.json.bak
+pnpm-lock.yaml.bak
+
+# === Python & uv ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.uv/
+
+# === Environment variables & Secrets ===
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pub
+*.cert
+*.crt
+id_rsa
+id_ed25519
+
+# === Docker & Containers ===
+.docker/
+
+# === Temporary & Build files ===
+dist/
+build/
+*.tmp
+*.temp
+*.log
