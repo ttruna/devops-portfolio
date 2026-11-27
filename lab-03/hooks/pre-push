@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+TESTS_DIR="$REPO_ROOT/lab-03/tests"
+
+echo "[pre-push] Запуск автоматичних тестів перед відправкою..."
+
+if [[ -d "$TESTS_DIR" ]]; then
+    if ! python3 -m unittest discover -s "$TESTS_DIR" -p "test_*.py" -v; then
+        echo "[pre-push] Відправку (git push) скасовано: тести не пройдено." >&2
+        exit 1
+    fi
+fi
+
+echo "[pre-push] Усі тести успішно пройдено."
+exit 0
