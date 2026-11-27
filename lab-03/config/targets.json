@@ -1,0 +1,39 @@
+{
+  "targets": [
+    {
+      "name": "Healthy API (GitHub Zen)",
+      "url": "https://api.github.com/zen",
+      "expected_status": 200,
+      "timeout": 5.0,
+      "latency_threshold_ms": 2000
+    },
+    {
+      "name": "DNS Failure Case",
+      "url": "https://nonexistent-domain-devops-lab03-test.invalid/health",
+      "expected_status": 200,
+      "timeout": 3.0,
+      "latency_threshold_ms": 1000
+    },
+    {
+      "name": "Connection Refused Case",
+      "url": "http://127.0.0.1:59999/health",
+      "expected_status": 200,
+      "timeout": 3.0,
+      "latency_threshold_ms": 1000
+    },
+    {
+      "name": "Expired SSL Certificate Case",
+      "url": "https://expired.badssl.com/",
+      "expected_status": 200,
+      "timeout": 5.0,
+      "latency_threshold_ms": 2000
+    },
+    {
+      "name": "Unexpected Status Code Case",
+      "url": "https://httpbin.org/status/418",
+      "expected_status": 200,
+      "timeout": 5.0,
+      "latency_threshold_ms": 2000
+    }
+  ]
+}
